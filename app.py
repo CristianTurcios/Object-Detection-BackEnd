@@ -10,7 +10,7 @@ CORS(app)
 def detection():
     r = request
 
-    kangaroo_detector = deteccion("models/model.pth")
+    kangaroo_detector = deteccion("models/model2.pth")
     
     # predecimos
     result = kangaroo_detector.predice(r)
