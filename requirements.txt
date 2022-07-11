@@ -1,1 +1,23 @@
-Flask==2.1.2
+# Standard environment
+gunicorn==20.1.0
+Flask
+flask-cors
+jsonpickle==2.2.0
+opencv-python
+numpy==1.21.5
+torch
+torchvision
+# torch==1.11.0
+# torchvision==0.12.0
+
+
+
+# Flex environment
+# Flask
+# gunicorn==20.1.0
+# flask-cors
+# jsonpickle==2.2.0
+# opencv-python
+# numpy
+# torch
+# torchvision

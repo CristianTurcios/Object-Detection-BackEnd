@@ -10,10 +10,15 @@ _here = os.path.dirname(os.path.abspath(__file__))
 filename = os.path.join(_here, 'models/model.pth')
 CORS(app)
 
+
+@app.route('/')
+def hello():
+    """Return a friendly HTTP greeting."""
+    return 'Hello World!'
+
 @app.route('/detection', methods=['POST'])
 def detection():
     r = request
-
     kangaroo_detector = deteccion(filename)
     
     # predecimos
@@ -37,4 +42,4 @@ def download_model():
 
 if __name__ == '__main__':
     download_model()
-    app.run(host='0.0.0.0', port=1005)
+    app.run(host='0.0.0.0', port=1005, debug=True)
